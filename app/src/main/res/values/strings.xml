@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Projeto Caroba</string>
+    <string-array name="institutions">
+        <item>UDESC</item>
+        <item>PBF</item>
+        <item>EDUCAMAR</item>
+        <item>LABZOO</item>
+    </string-array>
+
+    <string-array name="sample_types">
+        <item>Pele</item>
+        <item>Músculo</item>
+        <item>Gordura</item>
+    </string-array>
+</resources>

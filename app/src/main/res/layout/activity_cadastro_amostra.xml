@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- EditText para Instituição -->
+
+    <!-- Exibindo o Responsável -->
+
+    <!-- Campo para Espécie -->
+
+    <!-- Spinner para Tipo de Amostra (Pele, Músculo, Gordura) -->
+
+    <Spinner
+        android:id="@+id/spinnerSampleType"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Selecione o tipo de amostra"
+        android:importantForAccessibility="yes"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/editCollectionDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editInstitution"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:focusable="false"
+        android:foregroundTint="#FFFFFF"
+        android:hint="Instituição Coletora"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/editResponsible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editResponsible"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:hint="Responsável"
+        app:layout_constraintBottom_toTopOf="@+id/editSpecies"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editSpecies"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Espécie"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerSampleType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editCollectionDate"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Data da Coleta"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnSaveSample"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSaveSample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#4CAF50"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="add"
+        android:text="Cadastrar Amostra"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:iconTint="#EFF6EF"
+        app:layout_constraintTop_toBottomOf="@+id/editCollectionDate"
+        app:rippleColor="#4CAF50"
+        tools:layout_editor_absoluteX="228dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="386dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/frame_1"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Preencha os campos abaixo com as informações solicitadas."
+        app:layout_constraintBottom_toTopOf="@+id/editInstitution"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <!-- Campo para Data da Coleta -->
+
+    <!-- Botão para Salvar -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

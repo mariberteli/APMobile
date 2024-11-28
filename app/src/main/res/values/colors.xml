@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cores Básicas -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="sea_green">#2E8B57</color>
+
+    <!-- Cores Inspiradas no Mar -->
+    <color name="sea_blue">#4682B4</color> <!-- Azul suave -->
+    <color name="seafoam_green">#2E8B57</color> <!-- Verde espuma do mar -->
+    <color name="light_sky_blue">#87CEFA</color> <!-- Azul céu claro -->
+    <color name="sand_beige">#F4A460</color> <!-- Cor de areia -->
+    <color name="light_blue">#ADD8E6</color> <!-- Azul claro -->
+</resources>

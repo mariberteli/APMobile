@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#E0F7FA">
+
+    <Spinner
+        android:id="@+id/spinnerInstitution"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/editResponsible"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="Nome do Responsável"
+        android:backgroundTint="#00796B"
+        android:padding="12dp"
+        android:textColor="#00796B"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Salvar"
+        android:textColor="#FFFFFF"
+        android:background="#00796B"
+        android:textSize="16sp" />
+
+</LinearLayout>

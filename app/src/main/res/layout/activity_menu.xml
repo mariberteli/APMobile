@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50"
+    android:orientation="vertical"
+    android:padding="16dp"> <!-- Cor suave para o fundo -->
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="438dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="258dp"
+        android:background="#4CAF50"
+        app:layout_constraintBottom_toTopOf="@+id/btnDeleteSample"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/frame_1" />
+
+    <Button
+        android:id="@+id/btnRegisterSample"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/sea_green"
+        android:text="Cadastrar Amostra"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnConsultSample"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDeleteSample"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="283dp"
+        android:background="@color/sea_green"
+        android:text="Excluir Amostra"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnConsultSample"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/sea_green"
+        android:text="Consultar Amostra"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnEditSample"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnEditSample"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/sea_green"
+        android:text="Editar Amostra"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnDeleteSample"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
